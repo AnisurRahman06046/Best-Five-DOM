@@ -1,5 +1,5 @@
 const buttons = document.getElementsByClassName('playerBtn');
-let arr = [];
+const arr = [];
 for (let button of buttons){
     button.addEventListener('click',function(event){
         event.target.disabled = true;
@@ -14,8 +14,12 @@ for (let button of buttons){
         arr.push(playername);
         if(arr.length>5){
             alert('can not add more than 5');
+            arr.pop();
             return;
         }
+        
+        
+        
 
         listContainer.appendChild(li);
     
@@ -25,7 +29,7 @@ for (let button of buttons){
 
 document.getElementById('button-calculate').addEventListener('click',function(){
     const playerCost = getInputElementValueById('player-cost');
-    const allPlayerExpense = playerCost*5;
+    const allPlayerExpense = playerCost*arr.length;
     
     const playerExpenses = setTextElementValue('player-expense',allPlayerExpense);
  
