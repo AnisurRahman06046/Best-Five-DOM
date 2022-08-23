@@ -91,7 +91,7 @@
 
             <!-- selected player list  -->
 
-            <div class="col-4 border border-2">
+            <div class="col-4 ">
               <div class="bg-dark h-25 mx-auto">
                 <h3 class="fw-bold text-warning text-center">Selected Players</h3>
 
@@ -100,14 +100,25 @@
                 </ol>
               </div>
 
-              <div class="container">
-                <div class="text-center">
+              <!-- budget and calculation section  -->
+              <div class="container bg-dark">
+                <div class="text-center pt-5">
                   <h1 class="text-white fw-bold">Budget</h1>
-                  <div class="d-flex">
+                  <div class="d-flex pt-2">
                     <label class="text-white fs-4 fw-semibold" for="">Per Player: </label>
-                    <input class="mx-2" type="text">
+                    <input id="player-cost" class="mx-2" type="text">
                   </div>
-                  <button class="btn btn-primary">Calculate</button>
+                  <button id="button-calculate" class="btn btn-primary px-5 mt-3">Calculate</button>
+                </div>
+                
+                <div class="mx-auto text-center mt-3">
+                  <h1 class=" text-white fs-3">Player Expenses: <span id="player-expense">0000</span></h1>
+                  <label class="text-white fs-4 fw-semibold" for="">Manager: </label>
+                  <input id="manager-field" class="mx-2" type="text">
+                  <label class="text-white fs-4 fw-semibold" for=""> Coach:</label>
+                  <input id="coach-field" class="mx-4" type="text">
+                  <button id="total-calculate" class="btn btn-primary px-5 mt-3">Calculate Total</button>
+                  <h1 class="text-white pb-5 fs-3 mt-3">Total: <span id="total-expense">0000</span></h1>
                 </div>
               </div>
             </div>
