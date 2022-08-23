@@ -9,7 +9,7 @@ function getTextElementValueById(textElementId){
     const textElementField = document.getElementById(textElementId);
     const textElementString = textElementField.innerText;
     const textElement = parseInt(textElementString);
-    textElementField.innerText = textElement;
+    return textElement;
 }
 
 function setTextElementValue(elementID,newValue){

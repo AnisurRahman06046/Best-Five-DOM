@@ -34,9 +34,8 @@ document.getElementById('button-calculate').addEventListener('click',function(){
 document.getElementById('total-calculate').addEventListener('click',function(){
     const managerField = getInputElementValueById('manager-field');
     const coachField = getInputElementValueById('coach-field');
-    const allPlayerExpensetext = document.getElementById('player-expense');
-    const allPlayerExpenseString = allPlayerExpensetext.innerText;
-    const allPlayerExpense = parseInt(allPlayerExpenseString);
+    
+    const allPlayerExpense = getTextElementValueById('player-expense')
     
 
     // total expenses 
