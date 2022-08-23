@@ -15,6 +15,7 @@ for (let button of buttons){
         if(arr.length>5){
             alert('can not add more than 5');
             arr.pop();
+            event.target.disabled=false
             return;
         }
         
